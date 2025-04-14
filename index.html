@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Computers</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #6c63ff;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+        .hero {
+            height: 100vh;
+            background: url('assets/images/slider/slide3.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: rgb(218, 35, 35);
+            background: #ffdd57;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background: #ffc107;
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .testimonials {
+            background: #6c63ff;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .testimonial-carousel {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            gap: 20px;
+        }
+        .testimonial {
+            max-width: 300px;
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #6c63ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #5a54d6;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="Nitin Computers Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Nitin Computers</h1>
+        <p>Your one-stop solution for all computer needs.</p>
+        <button>Explore Services</button>
+    </section>
+
+    <section id="service_2" class="service_2">
+        <h2>Services</h2>
+    </section>
+
+    <section id="services" class="services">
+    
+        <div class="service-cards">
+            <div class="card">
+                <img src="assets/images/ComputerSales.png" alt="Computer Sales">
+                <h3>Computer Sales</h3>
+                <p>Top-quality computers and peripherals at unbeatable prices.</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/networksol.png" alt="Networking Solutions">
+                <h3>Networking Solutions</h3>
+                <p>Seamless network setups and Wi-Fi optimization.</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/DataRecov.png" alt="Data Recovery">
+                <h3>Data Recovery</h3>
+                <p>Advanced data recovery services for lost files.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Excellent service and support! Highly recommend Nitin Computers."</p>
+                <h4>- John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Quick and reliable solutions for all my computer needs."</p>
+                <h4>- Jane Smith</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="map" class="map">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.94708293703863!2d74.45078353758724!3d19.57793078996621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcf72d9fb73d27%3A0x23ceeedf97f4d56a!2sMangalya%20Shopping%20Complex!5e0!3m2!1sen!2sin!4v1744616765959!5m2!1sen!2sin"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Nitin Computers. All Rights Reserved. | <a href="#home">Back to Top</a></p>
+    </footer>
+</body>
+</html>
